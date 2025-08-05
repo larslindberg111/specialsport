@@ -9,6 +9,7 @@ Eksempel deltager [#4837 Vladimirov](https://app.donorfy.com/Constituent/Index?I
 
 ## API
 
-Available here : [Donorfy API Documentation](https://support.donorfy.com/hc/en-us/articles/115003304009-API-Overview)
+* Description : [Donorfy API Documentation](https://support.donorfy.com/hc/en-us/articles/115003304009-API-Overview)
+* Reference: [Donorfy Reference](https://data.donorfy.com/help/index)
 
 
