@@ -4,12 +4,19 @@
 * Donorfy: [app.donorfy.com](https://app.donorfy.com/)
 * Hjemmeside: [specialsport.dk](https://specialsport.dk/)
 * Specialsport Guiden: [https://specialsportguide.com](https://specialsportguide.com)
-* Trello:[https://trello.com](https://trello.com/) : Bruges til at følge 
+* Trello:[https://trello.com](https://trello.com/) : Bruges til at lave forløb
 * Sharepoint?
-* 
+* BusinessCentral
+* Survey Exact
+
+### Trello
+Består af boards med lister og kort
+Der kan f.eks. være et board med forløb ad sportsaktiviteter i hovedstaden, hvor hver liste indeholder de individer der er igang med forløbet.
+Kort har labels beskrivelse og aktiviteter og checkliste med checklist items. Alle kort har et custom ID felt der svarer til entitet ID i Donofy
+
 
 ## Terminologi
-* Entitet: Dette dækker og de ting der registeres i Donorfy.
+* Entitet: Dette dækker og de ting der registeres i Donorfy. Alle entiteter har et unikt ID i Donorfy
   * Entiteter indeles i entitetstyperne individ, hold og forening.
   * Entiteter har typisk en profil med kontaktoplysninger, tags
   * Entiteter har typisk en timeline bestående af aktiviteter.
@@ -17,7 +24,7 @@
 * Hold (entitetstype): Dækker de hold som individer kan tilmelde sig, er typisk knyttet til en forening
 * Forening (entitetstype): Dækker de foreninger som har holdene. Er typisk knyttet til et eller flere hold.
 * Aktivitet: Der kan registereres aktiviteter på entiteter. Aktivieter
-* Forløb: Viser 
+* Forløb (Trelloboard): Viser kort for de individer der deltager i forløbet. Når et individ kommer videre i forløbet flyttes kortet til en ny liste på boardet.
 
 
 ## Hvilke ønsker er der til ny funktionalitet
