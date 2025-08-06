@@ -1,13 +1,37 @@
 # Specialsport
 
+## Terminologi
+* Entitet: Dette dækker og de ting der registeres i Donorfy. Alle entiteter har et unikt ID i Donorfy
+  * Entiteter indeles i entitetstyperne individ, hold og forening.
+  * Entiteter har typisk en profil med kontaktoplysninger og tags
+  * Entiteter har typisk en timeline bestående af aktiviteter.
+* Individ(entitetstype): Dækker personer, dette er typisk individer der ønsker at deltage på hold eller frivillige eller ansatte i specialsport
+* Hold (entitetstype): Dækker de hold som individer kan tilmelde sig, er typisk knyttet til en forening
+* Forening (entitetstype): Dækker de foreninger som har holdene. Er typisk knyttet til et eller flere hold.
+* Aktivitet: Der kan registereres aktiviteter på entiteter. Aktivieter stemples altid med et datostempel samt hvornår de er oprettet for at danne en timeline.
+* Forløb (Trelloboard): Viser kort for de individer der deltager i forløbet. Når et individ kommer videre i forløbet flyttes kortet til en ny liste på boardet.
+
 ## Systemer
-* Donorfy: [app.donorfy.com](https://app.donorfy.com/)
-* Hjemmeside: [specialsport.dk](https://specialsport.dk/)
+* Donorfy: [app.donorfy.com](https://app.donorfy.com)
+* Hjemmeside: [specialsport.dk](https://specialsport.dk)
 * Specialsport Guiden: [https://specialsportguide.com](https://specialsportguide.com)
-* Trello:[https://trello.com](https://trello.com/) : Bruges til at lave forløb
-* Sharepoint?
-* BusinessCentral
-* Survey Exact
+* Trello:[https://trello.com](https://trello.com) : Bruges til at lave forløb
+* BusinessCentral: ?
+* Survey Exact: [https://www.survey-xact.dk](https://www.survey-xact.dk)
+
+### Donorfy
+Bruges til at oprette entiteter, entiteter for deres unikke ID når de oprettes i Donorfy
+Her kan tilføjes kontaktoplysninger og tags til entiteter, ligesom der kan oprettes aktiviteter i entitetens timeline
+Entiteter kan knyttes til hinanden, f.eks. kan der knyttes flere hold til en forening.
+
+#### Håndtering af tags og tag kategorier
+Man kan se tags og tag kategorier i Donorfy ved at gå til Settings -> Configuration -> Vælge "Tags and Tag Categories" -> vælge en tag kategori fra listen
+
+#### Forms
+Man kan lave forms som kan bruges til at modtage input fra hjemmesiden.
+F.eks. kan man lave en form for at tilføje en forening. 
+I formen angiver man hvilke felter brugeren skal se på hjemmesiden og evt. andet tekst. 
+Dette præsenteres så på hjemmesiden og brugeren på hjemmesiden kan direkte oprette en forening
 
 ### Trello
 Består af boards med lister og kort
@@ -15,16 +39,6 @@ Der kan f.eks. være et board med forløb ad sportsaktiviteter i hovedstaden, hv
 Kort har labels beskrivelse og aktiviteter og checkliste med checklist items. Alle kort har et custom ID felt der svarer til entitet ID i Donofy
 
 
-## Terminologi
-* Entitet: Dette dækker og de ting der registeres i Donorfy. Alle entiteter har et unikt ID i Donorfy
-  * Entiteter indeles i entitetstyperne individ, hold og forening.
-  * Entiteter har typisk en profil med kontaktoplysninger, tags
-  * Entiteter har typisk en timeline bestående af aktiviteter.
-* Individ(entitetstype): Dækker personer, dette er typisk individer der ønsker at deltage på hold eller frivillige eller ansatte i specialsport
-* Hold (entitetstype): Dækker de hold som individer kan tilmelde sig, er typisk knyttet til en forening
-* Forening (entitetstype): Dækker de foreninger som har holdene. Er typisk knyttet til et eller flere hold.
-* Aktivitet: Der kan registereres aktiviteter på entiteter. Aktivieter
-* Forløb (Trelloboard): Viser kort for de individer der deltager i forløbet. Når et individ kommer videre i forløbet flyttes kortet til en ny liste på boardet.
 
 
 ## Hvilke ønsker er der til ny funktionalitet
