@@ -1,5 +1,13 @@
 # specialsport
 
+## Systemer
+* Donorfy
+* Hjemmeside
+* Specialsport Guiden
+* Trello
+* Sharepoint?
+* 
+
 ## Åbne spørgsmål
 
 
