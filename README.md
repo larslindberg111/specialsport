@@ -59,17 +59,38 @@ Denne nøgle skal så bruges til alle kald der henter information, den kan også
 Sikkerhedsrisiko: Der er en stor risiko ved denne da enhver med adgang til Api nøglen kan læse, skrive og slette alt i alle Trello boards (nøglen har samme rettigheder som brugeren der oprette nøglen)
 
 ### Integration med Office365
+Dette er ikke så konkret, så indtil videre gås ikke videre med dette
 
-
-### Genbruge  entitetsoplysninger fra Donorfy når man arbejder i Trello
+### Genbruge entitetsoplysninger fra Donorfy når man arbejder i Trello
 Hvilke data drejer det sig om? (disse data skal være i begge systemer)
-Findes både data fra Donorfy og modtager systemet i Azure databasen?
-Skal data kopeieres i Azure databasen fra Donory til andre systemer, og i givet fald hvilke
+* Findes både data fra Donorfy og modtager systemet i Azure databasen?
+* Skal data kopieres i Azure databasen fra Donory til andre systemer, og i givet fald hvilke
 
 #### Option: Kopier data Donorfy til Trelloboards
 Det er ikke muligt på en struktuereret måde at overføre f.eks. adresseoplysninger fra Donorfy til de enkelte kort i Trello, selvom der er en reference i Trello til de pågældende entitets id fra Donorfy
 
-#### Option: Lave et program på den enkelte maskine, hvor brugeren kan slå oplysninger op ud fra entitets id
+#### Option: Lave et program der kan tilgå Donorfy data
+Det skal konkretiseres hvilke ønsker man har, f.eks.
+* Man skal kunne slå en entitet op ud fra entitets id, og se f.eks. kontaktoplysninger
+* Man skal kunne opdatere kontaktoplysninger på en entitet
+* Man skal kunne se alle entiteter i en liste
+* Man skal kunne eksportere alle entiteter i en liste til f.eks. csv (Excel)
+* Måske funktionalitet til at konvertere JSON til csv
+Sikkerhedsaspekter
+* For at kunne tilgå Donorfy skal man have en Donorfy adgangsnøgle.
+* Denne adgangsnøgle skal være hemmelig, da den giver adgang til at gøre alt (læse oprette og slette) i Donorfy
+Hvilken slags applikation skal laves
+* Web Applikation
+  * Det er nok ikke umiddelbart mulig at lave en web løsning, da der er en del infrastruktur der skal oprettes og vedligeholdes, selvom dette ellers nok ville være den bedste løsning
+  * Donorfy adgangsnøglen skal opbevares et sikkert sted og være tilgængelig for 
+* Standalone Applikation (Windows Application)
+  * Det laves en applikation (exe fil) som skal installeres på brugerens computer
+  * Dette er ikke optimalt da det er besværligt at distribuere applikationer mellem computere
+  * Donorfy adgangsnøglen må ikke ikke være en del af applikationen, men man kan evt. lade programmet læse den fra brugerens miljøvariable, dette kræver dog så at en med adgang til sikkerghedsnøglen opretter miljøvariablen på computeren.
+    
+
+
+på den enkelte maskine, hvor brugeren kan slå oplysninger op ud fra entitets id
 
 ## Åbne spørgsmål
 Hvordan kan jeg tilgå Azure databasen
