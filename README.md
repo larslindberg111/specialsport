@@ -50,9 +50,12 @@ Hvad skal man bruge disse data til i databasen?
 * Man kan måske få et overblik over hvilke entiteter der findes på de enkelte boards og hvilken status (liste) de er i
 * Indholdet af det enkelte kort er ikke struktureret data men blot en mængde tekst, så man kan ikke f.eks. søge på navn eller kommune eller andet.
 #### Option: Trello Export funktionalitet
-Eksport funktionaliteten i Trello er ved at blive afskaffet i Trello.
-Den eksporterer i en blanding af csv og json
-Formatet er ikke dokumenteret, så det er ikke lige til at trække data ud på en truktureret måde, tror mest det anvendes om en mulighed for backup
+* Eksport funktionaliteten i Trello er ved at blive afskaffet i Trello.
+* Den eksporterer i en blanding af csv og json
+* Vi vil så vidt muligt gerne se alt i csv
+* Formatet er ikke dokumenteret men ser ud som om det har de vigtigste oplysninger
+* Jeg kan evt. lave et tool der f.eks. kan trække alle  kan eksportere i en folder struktur hvor der f.eks. er en 
+*  er ikke lige til at trække data ud på en truktureret måde, tror mest det anvendes om en mulighed for backup
 #### Option: Trello REST API
 Der er dog et REST API, som kan anvendes til at hente data ud på en mere struktureret måde. Dette kræver at man laver en såkaldt Trello Power-Up og får en Api nøgle.
 Denne nøgle skal så bruges til alle kald der henter information, den kan også skrive til Trello boards
