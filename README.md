@@ -10,6 +10,7 @@
 * Forening (entitetstype): Dækker de foreninger som har holdene. Er typisk knyttet til et eller flere hold.
 * Aktivitet: Der kan registereres aktiviteter på entiteter. Aktivieter stemples altid med et datostempel samt hvornår de er oprettet for at danne en timeline.
 * Forløb (Trelloboard): Viser kort for de individer der deltager i forløbet. Når et individ kommer videre i forløbet flyttes kortet til en ny liste på boardet.
+* Checkliste (Trello):
 
 ## Systemer
 * Donorfy: [app.donorfy.com](https://app.donorfy.com)
@@ -20,23 +21,24 @@
 * Survey Exact: [https://www.survey-xact.dk](https://www.survey-xact.dk)
 
 ### Donorfy
-Bruges til at oprette entiteter, entiteter for deres unikke ID når de oprettes i Donorfy
-Her kan tilføjes kontaktoplysninger og tags til entiteter, ligesom der kan oprettes aktiviteter i entitetens timeline
-Entiteter kan knyttes til hinanden, f.eks. kan der knyttes flere hold til en forening.
+Bruges til at oprette og redigere entiteter
+* Entiteter får deres unikke ID når de oprettes i Donorfy
+* Her kan tilføjes kontaktoplysninger og tags til entiteter, ligesom der kan oprettes aktiviteter i entitetens timeline
+* Entiteter kan knyttes til hinanden, f.eks. kan der knyttes flere hold til en forening.
 
 #### Håndtering af tags og tag kategorier
 Man kan se tags og tag kategorier i Donorfy ved at gå til Settings -> Configuration -> Vælge "Tags and Tag Categories" -> vælge en tag kategori fra listen
 
 #### Forms
-Man kan lave forms som kan bruges til at modtage input fra hjemmesiden.
-F.eks. kan man lave en form for at tilføje en forening. 
-I formen angiver man hvilke felter brugeren skal se på hjemmesiden og evt. andet tekst. 
-Dette præsenteres så på hjemmesiden og brugeren på hjemmesiden kan direkte oprette en forening
+* Man kan lave forms som kan bruges til at modtage input fra hjemmesiden.
+* F.eks. kan man lave en form for at tilføje en forening. 
+* I formen angiver man hvilke felter brugeren skal se på hjemmesiden og evt. andet tekst. 
+* Dette præsenteres så på hjemmesiden og brugeren på hjemmesiden kan direkte oprette en forening
 
 ### Trello
-Består af boards med lister og kort
-Der kan f.eks. være et board med forløb ad sportsaktiviteter i hovedstaden, hvor hver liste indeholder de individer der er igang med forløbet.
-Kort har labels beskrivelse og aktiviteter og checkliste med checklist items. Alle kort har et custom ID felt der svarer til entitet ID i Donofy
+* Består af boards med lister og kort
+* Der kan f.eks. være et board med forløb ad sportsaktiviteter i hovedstaden, hvor hver liste indeholder de individer der er igang med forløbet.
+* Kort har labels beskrivelse og aktiviteter og checkliste med checklist items. Alle kort har et custom ID felt der svarer til entitet ID i Donofy
 
 
 
