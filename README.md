@@ -87,13 +87,9 @@ Hvilken slags applikation skal laves
   * Det laves en applikation (exe fil) som skal installeres på brugerens computer
   * Dette er ikke optimalt da det er besværligt at distribuere applikationer mellem computere
   * Donorfy adgangsnøglen må ikke ikke være en del af applikationen, men man kan evt. lade programmet læse den fra brugerens miljøvariable, dette kræver dog så at en med adgang til sikkerghedsnøglen opretter miljøvariablen på computeren.
-    
-
-
-på den enkelte maskine, hvor brugeren kan slå oplysninger op ud fra entitets id
 
 ## Åbne spørgsmål
 Hvordan kan jeg tilgå Azure databasen
+Kan jeg installer WPF
 
 
-### Evt ønsker til rapportering
