@@ -22,4 +22,9 @@ ConstituentType
 * Hold
 * Individual
 
+Relation
+> Contains information about how constituents are related to each other, ie. Forening may be related to one or more Hold.
+* ParentId
+* ChildId
+* RelationType
 
