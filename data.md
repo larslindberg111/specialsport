@@ -28,3 +28,6 @@ Relation
 * ChildId
 * RelationType
 
+Address
+> Contains address information for constituents
+> 
