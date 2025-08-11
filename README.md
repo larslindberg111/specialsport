@@ -91,7 +91,8 @@ Hvilken slags applikation skal laves
   * Donorfy adgangsnøglen må ikke ikke være en del af applikationen, men man kan evt. lade programmet læse den fra brugerens miljøvariable, dette kræver dog så at en med adgang til sikkerghedsnøglen opretter miljøvariablen på computeren.
 
 ## Åbne spørgsmål
-Hvordan kan jeg tilgå Azure databasen
-Kan jeg installer WPF
+* Hvordan kan jeg tilgå Azure databasen
+* Taler vi dansk eller engelsk i vores terminologi og dokumentation
+* 
 
 
