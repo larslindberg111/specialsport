@@ -1,3 +1,11 @@
+Generelle betragtninger om at gemme data i evt. database
+* Vi gemmer i første omgang kun data fra Donorfy
+* For at gemme data skal vi først hente alle data fra Donorfy, dette kan ske på 2 måder
+  * Donorfy API (man laver et program der kan hente data ud og skrive til databasen
+  * Gennem et job i Azure Data Factory (ADF) - kan se at der allerede ligger et ADF job der hover nogle data ud og skriver til databasen 
+
+Databasen kan f.eks. se således ud (men vil ikke gå igang med at designe denne da der tilsyneladende allerede findes en i Azure):
+
 
 Constituent
 > Contains all constituents
