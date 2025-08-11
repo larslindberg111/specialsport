@@ -50,19 +50,18 @@ Hvad skal man bruge disse data til i databasen?
 * Man kan måske få et overblik over hvilke entiteter der findes på de enkelte boards og hvilken status (liste) de er i
 * Indholdet af det enkelte kort er ikke struktureret data men blot en mængde tekst, så man kan ikke f.eks. søge på navn eller kommune eller andet.
 #### Option: Trello Export funktionalitet
-* Eksport funktionaliteten i Trello er ved at blive afskaffet i Trello.
-* Den eksporterer i en blanding af csv og json
-* Vi vil så vidt muligt gerne se alt i csv
+* Trello har funktionalitet til at eksportere et workspace til en zip fil. Denne fil indeholder en blanding af CSV og JSON filer
+* Man kan fra JSON filen udtrække allle boards og deres kort, samt hvilken liste det enkelte kort indeholder
 * Formatet er ikke dokumenteret men ser ud som om det har de vigtigste oplysninger
-* Jeg kan evt. lave et tool der f.eks. kan trække alle  kan eksportere i en folder struktur hvor der f.eks. er en 
-*  er ikke lige til at trække data ud på en truktureret måde, tror mest det anvendes om en mulighed for backup
+* Jeg kan f.eks. lave et tool der kan trække alle kort ud fra en eksporteret JSON fil til en CSV fil, med oplysninger for hvert kort om hvilket board og hvilken liste det tilhører
+* Man vil så kunne trække denne fil ind i Excel og har lave filtreringer, sorteringer osv. (f.eks se kort fra et given board i en bestemt liste, kort der ikke er givet nogen Donorfy nøgle, eller kort der ikke har nogen beskrivelse)
 #### Option: Trello REST API
-Der er dog et REST API, som kan anvendes til at hente data ud på en mere struktureret måde. Dette kræver at man laver en såkaldt Trello Power-Up og får en Api nøgle.
+Der er alternativt et REST API, som kan anvendes til at hente data ud på en mere struktureret måde. Dette kræver at man laver en såkaldt Trello Power-Up og får en Api nøgle.
 Denne nøgle skal så bruges til alle kald der henter information, den kan også skrive til Trello boards
 Sikkerhedsrisiko: Der er en stor risiko ved denne da enhver med adgang til Api nøglen kan læse, skrive og slette alt i alle Trello boards (nøglen har samme rettigheder som brugeren der oprette nøglen)
 
 ### Integration med Office365
-Dette er ikke så konkret, så indtil videre gås ikke videre med dette
+Dette er ikke så konkret, indtil videre antager jeg at man gerne vil kunne hive data over i Excel, dvs. at man skal kunne Eksportere relevante data til CSV filer.
 
 ### Genbruge entitetsoplysninger fra Donorfy når man arbejder i Trello
 Hvilke data drejer det sig om? (disse data skal være i begge systemer)
